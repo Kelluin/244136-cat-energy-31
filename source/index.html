@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>CAT Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="main-header"><!-- шапка сайта -->
+  <header class="main-header "><!-- шапка сайта -->
     <div class="main-header__logos logo"><!-- логотипы -->
       <a class="logo__cat" href="index.html">
         <img src="#" width="70" height="59" alt="Логотип">
@@ -19,17 +19,17 @@
         <img src="#" width="118" height="21" alt="Cat Energy">
       </a>
     </div>
-    <nav class="main-nav"><!-- навигация -->
-      <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link" href="index.html">Главная</a>
+    <nav class="main-header__nav site-nav"><!-- навигация -->
+      <button class="site-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="site-nav__list">
+        <li class="site-nav__item site-nav__item--current">
+          <a class="site-nav__link" href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav_link" href="#">Подбор программы</a>
+        <li class="site-nav__item">
+          <a class="site-nav_link" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -57,7 +57,7 @@
       </ul>
     </section>
     <section class="advantages"><!-- как это работает -->
-      <h2 class="advantages__title">Как это работает</h2>
+      <h2 class="advantages__headline">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--compound">
           <p class="advantages__discription">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -78,7 +78,7 @@
       </ul>
     </section>
     <section class="example"><!-- живой пример -->
-      <h2 class="example__title">Живой пример</h2>
+      <h2 class="example__headline">Живой пример</h2>
       <p class="example__discription">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <dl class="example__statistics stats">
         <div class="stats__item">
@@ -96,7 +96,7 @@
         <img src="#" width="560" height="512" alt="ПОСЛЕ, худой кот">
       </div>
     </section>
-    <section class="map">
+    <section class="map"><!-- карта и сотрудничество -->
       <h2 class="visually-hidden">Как нас найти.</h2>
       <div class="map__cooperation cooperation">
         <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
@@ -110,11 +110,11 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__logo">
+  <footer class="main-footer"><!-- подвал сайта -->
+    <div class="main-footer__logo"><!-- логотип -->
       <img src="#" width="128" height="24" alt="логотип Cat Energy">
     </div>
-    <div class="main-footer__social social">
+    <div class="main-footer__social social"><!-- соц сети -->
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="#">
@@ -136,9 +136,11 @@
         </li>
       </ul>
     </div>
-    <div class="main-footer__developer developer">
-      <span class="developer__name">HTML Academy</span>
-      <img src="#" width="27" height="34" alt="HTML Academy">
+    <div class="main-footer__developer developer"><!-- разработчик -->
+      <a class="developer__link" href="#">
+        <span class="developer__name">HTML Academy</span>
+        <img src="#" width="27" height="34" alt="HTML Academy">
+      </a>
     </div>
   </footer>
 </body>
