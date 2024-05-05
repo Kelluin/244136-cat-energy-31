@@ -15,21 +15,21 @@
 
 <body class="page-body">
   <header class="main-header"><!-- шапка сайта -->
-    <div class="main-header__logos logo"><!-- логотипы -->
-      <a class="logo__cat" href="index.html">
-        <img src="#" width="70" height="59" alt="Логотип">
-      </a>
-      <a class="logo__title" href="index.html">
-        <img src="#" width="118" height="21" alt="Cat Energy">
-      </a>
-    </div>
+    <a class="logo" href="index.html"><!-- логотипы -->
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+      </picture>
+      <img class="logo__cat-energy" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+    </a>
     <nav class="main-header__nav site-nav"><!-- навигация -->
-      <button class="site-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="site-nav__toggle nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="site-nav__list">
-        <li class="site-nav__item">
+        <li class="site-nav__item site-nav__item--current">
           <a class="site-nav__link" href="index.html">Главная</a>
         </li>
-        <li class="site-nav__item site-nav__item--current">
+        <li class="site-nav__item">
           <a class="site-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-nav__item">
