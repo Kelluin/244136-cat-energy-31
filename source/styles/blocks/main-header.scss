@@ -2,4 +2,13 @@
   display: flex;
   align-items: center;
   min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 115px;
+    align-items: flex-end;
+  }
 }

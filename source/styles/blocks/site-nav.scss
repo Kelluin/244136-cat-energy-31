@@ -17,6 +17,11 @@
     display: block;
     z-index: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
 }
 
 
@@ -31,4 +36,17 @@
   padding: 22px 20px 24px;
   text-align: center;
   border-top: 1px solid $other-color-1;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+  }
 }

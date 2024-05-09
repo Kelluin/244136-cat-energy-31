@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header"><!-- шапка сайта -->
+  <header class="main-header page__wrapper"><!-- шапка сайта -->
     <a class="logo" href="index.html"><!-- логотипы -->
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
@@ -40,16 +40,18 @@
   </header>
   <main class="main-container"><!-- блок main -->
     <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__discription">Занялся собой? Займись котом!</p>
-      <div class="hero__image-wrapper">
-        <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-          <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Пример питания для котов">
-        </picture>
+      <div class="hero__wrapper page__wrapper">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__discription">Занялся собой? Займись котом!</p>
+        <div class="hero__image-wrapper">
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+            <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Пример питания для котов">
+          </picture>
+        </div>
+        <a class="hero__button button" href="program.html">Подобрать программу</a>
       </div>
-      <a class="hero__button button" href="program.html">Подобрать программу</a>
     </section>
     <section class="diet"><!-- подборки программ питания -->
       <h2 class="visually-hidden">Для чего это нужно</h2>
