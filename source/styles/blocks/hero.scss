@@ -54,6 +54,7 @@
 
 .hero__title {
   @include reset;
+  width: 255px;
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 25px;
