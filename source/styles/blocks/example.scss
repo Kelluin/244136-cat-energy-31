@@ -4,16 +4,32 @@
 }
 
 .example__headline {
+  @include reset;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $text-color-secondary;
+  margin-bottom: 40px;
+  padding-top: 25px;
+}
+
+.example__discription {
+  @include reset;
+  margin-bottom: 20px;
+}
+
+.example__statistics {
+  @include reset;
+  margin-bottom: 34px;
 }
 
 .example__expenses {
+  @include reset;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   color: $text-color-secondary;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }

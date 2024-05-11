@@ -1,4 +1,13 @@
+.cooperation {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 112px;
+  max-width: 320px;
+  align-items: center;
+}
+
 .cooperation__title {
+  @include reset;
   font-family: $secondary-font;
   color: $text-color-fourth;
   font-size: 16px;
@@ -11,4 +20,8 @@
   line-height: 20px;
   color: $text-color-primary;
   font-style: normal;
+
+  & p {
+    @include reset;
+  }
 }

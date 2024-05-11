@@ -68,7 +68,7 @@
         </article>
       </div>
     </section>
-    <section class="advantages"><!-- как это работает -->
+    <section class="page__wrapper advantages"><!-- как это работает -->
       <h2 class="advantages__headline">Как это работает</h2>
       <ol class="advantages__list">
         <li class="advantages__item advantages__item--compound">
@@ -86,51 +86,54 @@
       </ol>
     </section>
     <section class="example"><!-- живой пример -->
-      <h2 class="example__headline">Живой пример</h2>
-      <p class="example__discription">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="example__statistics stats">
-        <div class="stats__item">
-          <dt class="stats__number">5 кг</dt>
-          <dd class="stats__discription">снижение веса</dd>
+      <div class="example__wrapper page__wrapper">
+        <h2 class="example__headline">Живой пример</h2>
+        <p class="example__discription">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="example__statistics stats">
+          <div class="stats__item stats__item--weight">
+            <dt class="stats__number">5 кг</dt>
+            <dd class="stats__discription">снижение веса</dd>
+          </div>
+          <div class="stats__item stats__item--time">
+            <dt class="stats__number">60 дней</dt>
+            <dd class="stats__discription">затрачено времени</dd>
+          </div>
+        </dl>
+        <p class="example__expenses">Затраты на питание: <span>15 000 руб.</span></p>
+        <div class="example__slider slider"><!-- слайдер ДО/ПОСЛЕ -->
+          <div class="slider__wrapper">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-before-tablet-desktop@1x.png 1x, images/index-before-tablet-desktop@2x.png 2x">
+              <img class="slider__item slider__item--before" src="images/index-before-mobile@1x.png" srcset="images/index-before-mobile@2x.png 2x" width="280" height="256" alt="ДО, толстый кот">
+            </picture>
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-after-tablet-desktop@1x.png 1x, images/index-after-tablet-desktop@2x.png 2x">
+              <img class="slider__item slider__item--after" src="images/index-after-mobile@1x.png" srcset="images/index-after-mobile@2x.png 2x" width="280" height="256" alt="ПОСЛЕ, худой кот">
+            </picture>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Потяните в сторону что-бы сравнить ДО и ПОСЛЕ</span>
+            </button>
+          </div>
         </div>
-        <div class="stats__item">
-          <dt class="stats__number">60 дней</dt>
-          <dd class="stats__discription">затрачено времени</dd>
-        </div>
-      </dl>
-      <p class="example__expenses">Затраты на питание:<span>15 000 руб.</span></p>
-      <div class="example__slider slider"><!-- слайдер ДО/ПОСЛЕ -->
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-before-tablet-desktop@1x.png 1x, images/index-before-tablet-desktop@2x.png 2x">
-          <img src="images/index-before-mobile@1x.png" srcset="images/index-before-mobile@2x.png 2x" width="280" height="256" alt="ДО, толстый кот">
-        </picture>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index-after-tablet-desktop@1x.png 1x, images/index-after-tablet-desktop@2x.png 2x">
-          <img src="images/index-after-mobile@1x.png" srcset="images/index-after-mobile@2x.png 2x" width="280" height="256" alt="ПОСЛЕ, худой кот">
-        </picture>
       </div>
     </section>
     <section class="map"><!-- карта и сотрудничество -->
       <h2 class="visually-hidden">Как нас найти.</h2>
-      <div class="map__cooperation cooperation">
-        <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
+      <div class="map__cooperation cooperation page__wrapper">
+        <h3 class="cooperation__title">приглашаем<br>к сотрудничеству дилеров!</h3>
         <address class="cooperation__address">
-          <p>ул. Большая Конюшенная, д. 19/8</p>
+          <p>ул. Большая</p>
+          <p>Конюшенная, д. 19/8</p>
           <p>Санкт-Петербург</p>
         </address>
       </div>
       <div class="map__wrapper">
-        <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
-        </picture>
       </div>
     </section>
   </main>
   <footer class="main-footer"><!-- подвал сайта -->
     <div class="main-footer__logo"><!-- логотип -->
-      <img src="images/logo-cat-energy.svg" width="128" height="24" alt="логотип Cat Energy">
+      <span class="visually-hidden">Логотип Cat Energy</span>
     </div>
     <div class="main-footer__social social"><!-- соц сети -->
       <ul class="social__list">
@@ -151,7 +154,7 @@
         </li>
       </ul>
     </div>
-    <div class="main-footer__developer developer"><!-- разработчик -->
+    <div class="main-footer__developer developer page__wrapper"><!-- разработчик -->
       <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="developer__name">HTML Academy</span>
       </a>

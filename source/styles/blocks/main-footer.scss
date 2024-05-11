@@ -1,5 +1,24 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
   background-color: $bg-color-third;
+}
+
+.main-footer__logo {
+  margin-top: 40px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 128px;
+    height: 23px;
+    mask-image: url("../../images/logo-cat-energy.svg");
+    background-color: $text-color-fourth;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .main-footer__social {
@@ -7,4 +26,9 @@
   border-bottom: 1px solid $other-color-2;
   padding: 20px 0;
   margin: 20px 0;
+}
+
+.main-footer__developer {
+  width: 320px;
+  margin-bottom: 40px;
 }
