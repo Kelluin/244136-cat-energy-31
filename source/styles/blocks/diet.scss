@@ -23,6 +23,16 @@
     background-color: $other-color-3;
     bottom: 57px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    padding-left: 52px;
+    padding-bottom: 53px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .diet__item--slim::before {
@@ -34,6 +44,14 @@
   height: 53px;
   top: 21px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    left: calc(100% - 63px);
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+  }
 }
 
 .diet__item--pro::before {
@@ -45,6 +63,14 @@
   height: 50px;
   top: 24px;
   left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+    height: 200px;
+    left: calc(100% - 29px);
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+  }
 }
 
 .diet__title {
@@ -56,6 +82,14 @@
   margin-left: 70px;
   margin-top: 12px;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 59px;
+    margin-bottom: 24px;
+    margin-left: 1px;
+  }
 }
 
 .diet__discription {
@@ -65,6 +99,13 @@
   line-height: 18px;
   color: $text-color-primary;
   margin-bottom: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 48px;
+  }
 }
 
 .diet__link {
@@ -72,14 +113,14 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: $text-color-secondary;
   position: relative;
-  min-width: 87px;
+  min-width: 134px;
   min-height: 16px;
   padding: 4px 47px 4px 0;
+
 
   &::after {
     content: "";
@@ -92,5 +133,12 @@
     height: 12px;
     mask-image: url("../../icons/stack.svg#arrow");
     background-color: $text-color-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 165px;
+    min-height: 38px;
   }
 }

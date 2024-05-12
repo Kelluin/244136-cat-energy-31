@@ -7,4 +7,8 @@
 
 .logo__cat-energy {
   margin-left: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
 }
