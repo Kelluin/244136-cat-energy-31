@@ -12,16 +12,20 @@
   width: 280px;
   height: 34px;
   align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .developer__link::after {
   content: "";
   display: block;
-  position: absolute;
   width: 27px;
   height: 34px;
   mask-image: url("../../icons/stack.svg#html-academy");
   background-color: $other-color-2;
   top: 0;
-  right: 20px;
+  right: 0;
 }

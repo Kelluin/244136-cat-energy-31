@@ -1,6 +1,14 @@
 .example {
+  display: flex;
   background-color: $bg-color-fourth;
   color: $text-color-primary;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $bg-color-primary 619px, $bg-color-fourth 619px);
+    padding-top: 20px;
+    border-top: 1px solid $other-color-1;
+    min-height: 1081px;
+  }
 }
 
 .example__headline {
@@ -11,20 +19,46 @@
   color: $text-color-secondary;
   margin-bottom: 40px;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__discription {
   @include reset;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__stats {
+    max-width: 708px;
+    margin: auto;
+    margin-bottom: 99px;
+  }
 }
 
 .example__statistics {
   @include reset;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .example__expenses {
   @include reset;
+  display: flex;
+  justify-content: center;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
@@ -32,4 +66,14 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 17px;
+  }
 }

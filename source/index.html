@@ -89,17 +89,19 @@
       <div class="example__wrapper page__wrapper">
         <h2 class="example__headline">Живой пример</h2>
         <p class="example__discription">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="example__statistics stats">
-          <div class="stats__item stats__item--weight">
-            <dt class="stats__number">5 кг</dt>
-            <dd class="stats__discription">снижение веса</dd>
-          </div>
-          <div class="stats__item stats__item--time">
-            <dt class="stats__number">60 дней</dt>
-            <dd class="stats__discription">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="example__expenses">Затраты на питание: <span>15 000 руб.</span></p>
+        <div class="example__stats stats">
+          <dl class="example__statistics stats__list">
+            <div class="stats__item stats__item--weight">
+              <dt class="stats__number">5 кг</dt>
+              <dd class="stats__discription stats__discription--weight">снижение веса</dd>
+            </div>
+            <div class="stats__item stats__item--time">
+              <dt class="stats__number">60 дней</dt>
+              <dd class="stats__discription stats__discription--time">затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="example__expenses">Затраты на питание: <span>15 000 руб.</span></p>
+        </div>
         <div class="example__slider slider"><!-- слайдер ДО/ПОСЛЕ -->
           <div class="slider__wrapper">
             <picture>
@@ -120,44 +122,48 @@
     <section class="map"><!-- карта и сотрудничество -->
       <h2 class="visually-hidden">Как нас найти.</h2>
       <div class="map__cooperation cooperation page__wrapper">
-        <h3 class="cooperation__title">приглашаем<br>к сотрудничеству дилеров!</h3>
-        <address class="cooperation__address">
-          <p>ул. Большая</p>
-          <p>Конюшенная, д. 19/8</p>
-          <p>Санкт-Петербург</p>
-        </address>
+        <div class="cooperation__wrapper">
+          <h3 class="cooperation__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+          <address class="cooperation__address">
+            <span class="cooperation__street">ул. Большая<br>
+              Конюшенная, д. 19/8</span>
+            <span class="cooperation__city">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="map__wrapper">
       </div>
     </section>
   </main>
   <footer class="main-footer"><!-- подвал сайта -->
-    <div class="main-footer__logo"><!-- логотип -->
-      <span class="visually-hidden">Логотип Cat Energy</span>
-    </div>
-    <div class="main-footer__social social"><!-- соц сети -->
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
-            <span class="visually-hidden">VK</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
-            <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__developer developer page__wrapper"><!-- разработчик -->
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="developer__name">HTML Academy</span>
-      </a>
+    <div class="main-footer__wrapper page__wrapper">
+      <div class="main-footer__logo"><!-- логотип -->
+        <span class="visually-hidden">Логотип Cat Energy</span>
+      </div>
+      <div class="main-footer__social social"><!-- соц сети -->
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__developer developer"><!-- разработчик -->
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="developer__name">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

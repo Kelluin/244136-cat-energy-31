@@ -10,6 +10,12 @@
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    min-height: 512px;
+    margin-bottom: 0;
+  }
 }
 
 .slider__item {

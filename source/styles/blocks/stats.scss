@@ -1,5 +1,17 @@
 .stats {
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.stats__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .stats__item {
@@ -13,21 +25,25 @@
   border-radius: 3px;
 
   &--weight {
-    margin-left: auto;
     margin-right: 32px;
   }
 
-  &--time {
-    margin-right: auto;
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
   }
 }
-
 
 .stats__number {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__discription {
@@ -42,4 +58,24 @@
   left: 22px;
   top: 46px;
   background-color: $bg-color-fourth;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-color-primary;
+    font-size: 14px;
+    line-height: 14px;
+    top: 63px;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .stats__discription--weight {
+    width: 114px;
+    left: 24px;
+  }
+
+  .stats__discription--time {
+    width: 142px;
+    left: 10px;
+  }
+}
+

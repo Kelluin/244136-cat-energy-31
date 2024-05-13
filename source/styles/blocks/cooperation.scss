@@ -1,9 +1,26 @@
 .cooperation {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  min-height: 112px;
-  max-width: 320px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 320px;
+  min-height: 112px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    min-height: 200px;
+  }
+}
+
+.cooperation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 40px;
+  }
 }
 
 .cooperation__title {
@@ -13,15 +30,31 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .cooperation__address {
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 20px;
   color: $text-color-primary;
   font-style: normal;
 
-  & p {
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  & span {
     @include reset;
+
+    @media (min-width: $tablet-width) {
+      text-align: end;
+      font-size: 16px;
+    }
   }
 }

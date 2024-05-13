@@ -22,6 +22,10 @@
     display: flex;
     gap: 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 
@@ -48,5 +52,6 @@
     font-size: 20px;
     line-height: 30px;
     border: none;
+    color: $text-color-third;
   }
 }
