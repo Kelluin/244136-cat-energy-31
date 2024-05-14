@@ -9,13 +9,15 @@
   background-color: $bg-color-primary;
   display: none;
 
-  &--opened {
-    position: absolute;
-    top: 64px;
-    left: 0;
-    min-width: 100%;
-    display: block;
-    z-index: 1;
+  @media (max-width: 767px) {
+    &--opened {
+      position: absolute;
+      top: 64px;
+      left: 0;
+      min-width: 100%;
+      display: block;
+      z-index: 1;
+    }
   }
 
   @media (min-width: $tablet-width) {
