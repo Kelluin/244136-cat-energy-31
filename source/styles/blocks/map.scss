@@ -1,4 +1,19 @@
+.map {
+  position: relative;
+}
+
+.map__cooperation {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: $bg-color-primary;
+    margin: 0;
+    z-index: 2;
+    top: 95px;
+  }
+}
+
 .map__wrapper {
+  position: relative;
   height: 362px;
   background-image: url("../../images/map-mobile@1x.png");
   background-size: cover;
@@ -10,6 +25,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 400px;
     background-image: url("../../images/map-tablet@1x.png");
 
     @media (min-resolution: 2dppx) {

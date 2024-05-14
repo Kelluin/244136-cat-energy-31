@@ -14,20 +14,23 @@
 
 .advantages__list {
   @include reset;
+  display: grid;
+  grid-template-columns: 1fr;
   list-style: none;
   counter-reset: num;
-  display: flex;
-  flex-direction: column;
   gap: 20px;
+  margin-bottom: 49px;
 
-  &:last-child {
-    margin-bottom: 49px;
-  }
 
   @media (min-width: $tablet-width) {
-    flex-flow: row wrap;
+    grid-template-columns: 1fr 1fr;
     gap: 37px;
-    column-gap: 20%;
+    column-gap: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 69px;
   }
 }
 
@@ -38,7 +41,6 @@
   margin-left: 80px;
 
   @media (min-width: $tablet-width) {
-    width: 246px;
     min-height: 280px;
     margin: 0;
     padding-top: 151px;
@@ -62,6 +64,24 @@
     top: 40px;
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--compound {
+    width: 230px;
+  }
+
+  .advantages__item--form {
+    width: 246px;
+  }
+
+  .advantages__item--dose {
+    width: 248px;
+  }
+
+  .advantages__item--changes {
+    width: 250px;
   }
 }
 

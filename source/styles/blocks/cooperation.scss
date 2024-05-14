@@ -10,6 +10,16 @@
     max-width: 768px;
     min-height: 200px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: $bg-color-primary;
+    width: 565px;
+    min-height: 199px;
+    margin: 0;
+    z-index: 2;
+    top: 95px;
+  }
 }
 
 .cooperation__wrapper {
@@ -20,6 +30,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 20px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 78px 60px 80px;
   }
 }
 
@@ -55,6 +69,10 @@
     @media (min-width: $tablet-width) {
       text-align: end;
       font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
     }
   }
 }

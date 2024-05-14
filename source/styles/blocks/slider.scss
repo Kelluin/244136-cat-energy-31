@@ -16,6 +16,12 @@
     min-height: 512px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .slider__item {
