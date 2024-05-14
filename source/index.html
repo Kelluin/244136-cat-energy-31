@@ -14,8 +14,8 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header page__wrapper"><!-- шапка сайта -->
-    <a class="logo" href="index.html"><!-- логотипы -->
+  <header class="main-header main-header--noscript page__wrapper"><!-- шапка сайта -->
+    <a class="logo logo--noscript" href="index.html"><!-- логотипы -->
       <picture>
         <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
@@ -23,9 +23,9 @@
       </picture>
       <img class="logo__cat-energy" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
     </a>
-    <nav class="main-header__nav site-nav"><!-- навигация -->
-      <button class="site-nav__toggle nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="site-nav__list">
+    <nav class="main-header__nav site-nav site-nav--noscript"><!-- навигация -->
+      <button class="site-nav__toggle nav-button nav-button--opened nav-button--noscript" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="site-nav__list site-nav__list--opened site-nav__list--noscript">
         <li class="site-nav__item site-nav__item--current">
           <a class="site-nav__link" href="index.html">Главная</a>
         </li>
@@ -121,17 +121,22 @@
     </section>
     <section class="map"><!-- карта и сотрудничество -->
       <h2 class="visually-hidden">Как нас найти.</h2>
-      <div class="map__cooperation cooperation page__wrapper">
-        <div class="cooperation__wrapper">
-          <h3 class="cooperation__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
-          <address class="cooperation__address">
-            <span class="cooperation__street">ул. Большая<br>
-              Конюшенная, д. 19/8</span>
-            <span class="cooperation__city">Санкт-Петербург</span>
-          </address>
+      <div class="map__cooperation cooperation">
+        <div class="page__wrapper">
+          <div class="cooperation__wrapper">
+            <h3 class="cooperation__title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+            <address class="cooperation__address">
+              <span class="cooperation__street">ул. Большая<br>
+                Конюшенная, д. 19/8</span>
+              <span class="cooperation__city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
-      </div>
-      <div class="map__wrapper"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.322982%2C59.938604&utm_medium=mapframe&utm_source=maps&z=18.65" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.322982%2C59.938604&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=18.65" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        <div class="map__wrapper">
+          <div class="map__iframe map__iframe--noscript">
+            <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?from=mapframe&ll=30.321707%2C59.938831&source=mapframe&utm_medium=mapframe&utm_source=maps&z=18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=30.321707%2C59.938831&mode=poi&poi%5Buri%5D=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&source=mapframe&utm_source=mapframe&z=18" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
       </div>
     </section>
   </main>

@@ -14,3 +14,9 @@
     align-items: flex-end;
   }
 }
+
+@media (max-width: 767px) {
+  .main-header--noscript {
+    flex-direction: column;
+  }
+}

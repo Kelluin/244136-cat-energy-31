@@ -3,6 +3,12 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .site-nav--noscript {
+    width: 100%;
+  }
+}
+
 .site-nav__list {
   @include reset;
   list-style: none;
@@ -17,6 +23,13 @@
       min-width: 100%;
       display: block;
       z-index: 1;
+    }
+
+    &--noscript {
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+      top: 0;
     }
   }
 
