@@ -3,13 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 280px;
   height: 290px;
   background-image:
     linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../../images/catalog-products-background-mobile@2x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, auto 100%;
+    url("../../images/catalog-products-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/catalog-products-background-mobile@2x.jpg");
+  }
 }
 
 .present__text {

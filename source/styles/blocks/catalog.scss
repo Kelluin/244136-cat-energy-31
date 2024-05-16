@@ -3,30 +3,73 @@
 }
 
 .catalog__headline {
+  @include reset;
   font-size: 36px;
   line-height: 36px;
+  padding: 27px 20px 41px;
+  margin: 0 -20px;
+  border-top: 1px solid $other-color-3;
+  border-bottom: 1px solid $other-color-5;
   color: $text-color-secondary;
+}
+
+.catalog__list {
+  @include reset;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  padding: 20px 20px 25px;
+  margin: 0 -20px;
+  border-bottom: 1px solid $other-color-5;
+
+  &--more {
+    padding-top: 25px;
+  }
 }
 
 .catalog__link {
   text-decoration: none;
+
+  &--image {
+    grid-row: span 2;
+    margin: auto;
+  }
+
+  &--title {
+    padding-bottom: 14px;
+  }
 }
 
 .catalog__title {
+  @include reset;
   font-size: 16px;
   line-height: 20px;
   color: $text-color-fifth;
   text-transform: uppercase;
+  width: 80px;
 }
 
 .catalog__title--more {
+  width: 100%;
   color: $text-color-fourth;
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 8px;
 
   &::before {
     display: block;
     content: "";
     width: 30px;
     height: 30px;
+    margin: auto;
+    margin-bottom: 23px;
     background-image: url("../../icons/stack.svg#plus");
     background-repeat: no-repeat;
     background-position: center;
@@ -34,9 +77,28 @@
   }
 }
 
-.catalog__text--more {
-  font-family: $primary-font;
-  font-size: 12px;
-  line-height: 16px;
-  color: $text-color-primary;
+.catalog__discription-wrapper {
+  padding-bottom: 4px;
+
+  &--more {
+    grid-column: span 2;
+  }
+}
+
+.catalog__text {
+  @include reset;
+
+  &--more {
+    font-family: $primary-font;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-color-primary;
+    text-align: center;
+  }
+}
+
+.catalog__button {
+  grid-column: span 2;
+  width: 100%;
+  margin-top: 17px;
 }
