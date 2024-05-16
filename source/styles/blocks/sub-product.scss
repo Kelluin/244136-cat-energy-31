@@ -14,6 +14,10 @@
   }
 }
 
+.sub-product__wrapper {
+  margin-bottom: 40px;
+}
+
 .sub-product__headline {
   @include reset;
   display: block;
