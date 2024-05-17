@@ -1,4 +1,4 @@
-.main-header {
+.main-header__wrapper {
   display: flex;
   align-items: center;
   min-height: 65px;
@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     min-height: 50px;
     padding-top: 25px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +17,7 @@
 }
 
 @media (max-width: 767px) {
-  .main-header--noscript {
+  .main-header__wrapper--noscript {
     flex-direction: column;
   }
 }
