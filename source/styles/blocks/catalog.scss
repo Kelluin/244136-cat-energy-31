@@ -74,7 +74,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    min-height: 436px;
+    min-height: 430px;
     padding: 50px 37px 40px;
     border: 2px solid $bg-color-third;
   }
@@ -179,6 +179,7 @@
     &--more {
       width: 200px;
       margin-bottom: 82px;
+      padding: 0;
     }
   }
 }
@@ -200,11 +201,16 @@
     border-bottom: 1px solid $other-color-6;
 
     &--more {
+      @include reset;
       font-size: 16px;
       line-height: 18px;
       border: none;
     }
   }
+}
+
+.catalog__text:last-child {
+  margin: 0;
 }
 
 .catalog__button {
