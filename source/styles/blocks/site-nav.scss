@@ -36,10 +36,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 33px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    max-width: 600px;
+    flex-wrap: wrap;
   }
 }
 

@@ -2,6 +2,14 @@
   font-family: $secondary-font;
 }
 
+.catalog__wrapper {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+  }
+}
+
 .catalog__headline {
   @include reset;
   font-size: 36px;
@@ -26,12 +34,15 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     justify-content: flex-start;
     gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 63px 80px;
   }
 }
 
@@ -63,6 +74,10 @@
       padding: 0;
       background: $bg-color-primary;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
@@ -110,6 +125,12 @@
       padding: 0;
       grid-column: span 2;
       justify-content: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--image {
+      width: 169px;
     }
   }
 }
