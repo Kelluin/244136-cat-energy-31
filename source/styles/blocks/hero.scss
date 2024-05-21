@@ -68,8 +68,8 @@
 
   @media (min-width: $tablet-width) {
     align-items: start;
-    min-height: 875px;
-    margin-top: 38px;
+    margin-top: 34px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,12 +106,14 @@
   @include reset;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     margin-left: 90px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,7 +126,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 709px;
-    min-height: 609px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,7 +146,7 @@
     min-height: 54px;
     font-size: 20px;
     line-height: 26px;
-    padding: 15px;
+    padding: 14px;
     position: absolute;
     left: 120px;
     top: 257px;

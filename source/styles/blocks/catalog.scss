@@ -3,7 +3,7 @@
 }
 
 .catalog__wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 74px;
@@ -50,12 +50,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, auto);
+  min-height: 209px;
   padding: 20px 20px 25px;
   margin: 0 -20px;
   border-bottom: 1px solid $other-color-5;
 
   &--more {
     padding-top: 25px;
+    min-height: 207px;
   }
 
   @media (min-width: $tablet-width) {

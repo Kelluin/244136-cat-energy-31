@@ -34,6 +34,7 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  width: 226px;
   color: $text-color-secondary;
   background-color: $bg-color-primary;
   position: relative;
@@ -78,7 +79,7 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid $other-color-6;
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
 
   &:first-child {
     border-top: 1px solid $other-color-6;
@@ -130,14 +131,16 @@
   & span {
     @include reset;
     min-width: 42px;
-    justify-content: end;
+  }
+
+  & .sub-product__text--value {
+    text-align: end;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 22px;
-    align-items: flex-end;
 
     & span {
       min-width: 42px;
@@ -148,7 +151,6 @@
   @media (min-width: $desktop-width) {
     width: 285px;
     margin: 0;
-    align-items: center;
     margin-right: 40px;
 
     & span {

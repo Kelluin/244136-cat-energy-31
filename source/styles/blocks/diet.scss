@@ -12,6 +12,12 @@
   }
 }
 
+.diet__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
 .diet__item {
   display: flex;
   flex-direction: column;
@@ -34,7 +40,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     padding-left: 52px;
     padding-bottom: 53px;
 
@@ -91,8 +97,8 @@
   @media (min-width: $tablet-width) {
     width: 275px;
     height: 200px;
-    left: calc(100% - 29px);
-    top: 50%;
+    left: calc(100% - 25px);
+    top: 190px;
     transform: translateX(-100%) translateY(-50%);
   }
 
@@ -167,15 +173,19 @@
 
   &::after {
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
-    left: calc(100% - 32px);
+    margin-left: 15px;
     top: 50%;
     transform: translateY(-50%);
     width: 24px;
     height: 12px;
     mask-image: url("../../icons/stack.svg#arrow");
     background-color: $text-color-secondary;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 26px;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -25,7 +26,8 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 37px;
-    column-gap: 70px;
+    column-gap: 60px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,7 +118,8 @@
     content: counter(num);
     counter-increment: num;
     top: 0;
-    right: 0;
+    right: 5;
+    text-align: end;
   }
 }
 
