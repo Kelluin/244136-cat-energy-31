@@ -16,6 +16,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 169px;
+  }
 }
 
 .main-footer__logo {
@@ -63,5 +67,9 @@
   @media (min-width: $tablet-width) {
     @include reset;
     margin-left: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 12px;
   }
 }

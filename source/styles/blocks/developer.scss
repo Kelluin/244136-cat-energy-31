@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+  }
 }
 
 .developer__link {

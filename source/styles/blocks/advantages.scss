@@ -33,6 +33,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 69px;
+    column-gap: 78px;
   }
 }
 
@@ -84,6 +85,12 @@
 
   .advantages__item--changes {
     width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item--compound {
+    margin-right: 16px;
   }
 }
 
