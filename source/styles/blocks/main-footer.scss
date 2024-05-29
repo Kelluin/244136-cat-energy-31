@@ -12,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    min-height: 147px;
+    min-height: 145px;
     justify-content: space-between;
     align-items: center;
   }
@@ -42,6 +42,18 @@
     background-color: $text-color-fourth;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &:hover::before {
+    background-color: $other-color-10;
+  }
+
+  &:focus::before {
+    background-color: $other-color-10;
+  }
+
+  &:active::before {
+    background-color: $other-color-11;
   }
 }
 

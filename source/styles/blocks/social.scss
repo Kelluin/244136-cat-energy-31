@@ -17,6 +17,19 @@
   background-color: $other-color-2;
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-color: $bg-color-secondary;
+  }
+
+  &:focus {
+    background-color: $bg-color-secondary;
+  }
+
+  &:active {
+    background-color: $bg-color-secondary;
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte {

@@ -81,6 +81,26 @@
     transform: translateY(-50%);
   }
 
+  &:hover::before {
+    border-color: $bg-color-secondary;
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $bg-color-secondary;
+  }
+
+  &:active::before {
+    border-color: $other-color-7;
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: $other-color-7;
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     left: 278px;
   }
